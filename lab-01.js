@@ -1,6 +1,8 @@
+console.clear();
+
 /*
-  Full Name:
-  Student ID:
+  Full Name: Andrew Arpin
+  Student ID: 200398857
 
   Instructions:
     Follow the steps below. If you have any questions
@@ -28,13 +30,26 @@
     Each object must have at least 2 properties.
 */
 
-const array = [Brad: "Smart", "Cool", ] 
+const arr = [
+  {
+    name: "Andrew",
+    age: "19"
+  },
+  {
+    name: "Mitch",
+    age: "20"
+  },
+  {
+    name: "James",
+    age: "21"
+  },
+  {
+    name: "Jack",
+    age: "22"
+  }
+];
 
-[
-    { Brad: "Smart", "Cool", Jack: "Tall", "Skinny", Kyle: "Strong", "Fast", Colin: "Tall", "Friendly" }
-]
-
-console.log(array);
+const {name: my_name, age : my_age} = arr;
 
 /*
   Step 2 (6 points):
@@ -44,6 +59,9 @@ console.log(array);
     template utilizing the properties you
     destructured.
 */
+const person = ({my_name, my_age}) => {  
+  console.log(`Your name is ${my_name}, and your hobby is ${my_age}`);
+};
 
 
 /*
@@ -52,3 +70,7 @@ console.log(array);
     Call your arrow function passing the array item
     as an argument.
 */
+for (let i of arr) 
+{
+  person(arr);
+}
