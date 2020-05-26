@@ -3,7 +3,6 @@ console.clear();
 /*
   Full Name: Andrew Arpin
   Student ID: 200398857
-
   Instructions:
     Follow the steps below. If you have any questions
     please feel free to use Slack to communicate. You
@@ -15,7 +14,6 @@ console.clear();
     Steps: 11.5 points
     Code Format: 10 points
     Github Link: 10 points
-
   NOTE: The code format and Github link marks are
     only awarded if the steps have been completed.
     (Code formatting is the visual structure of
@@ -49,7 +47,7 @@ const arr = [
   }
 ];
 
-const {name: my_name, age : my_age} = arr;
+const [{name: my_name, age: my_age}] = arr;
 
 /*
   Step 2 (6 points):
@@ -59,8 +57,8 @@ const {name: my_name, age : my_age} = arr;
     template utilizing the properties you
     destructured.
 */
-const person = ({my_name, my_age}) => {  
-  console.log(`Your name is ${my_name}, and your hobby is ${my_age}`);
+const person = ({my_name, my_age}) => { 
+  console.log(`Your name is ${my_name}, and your age is ${my_age}`);
 };
 
 
